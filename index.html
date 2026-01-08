@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Sri | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/blue.webp" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Bhavya Sri</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="size"src="images/creative.jpg">
+                </div>
+                <div class="about-col-2">
+                
+                <div class="btn-container">
+                <button
+                class="btn btn-color-2"onclick="window.open('./images/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1"onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div>
+                    <div  id="social-container">
+                        <img src="images/download.png"
+                        alt="My LinkedIn Profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/bhavya-sri-830348348'"/>
+                        <img src="images/download (1).png"
+                        alt="My GitHub Profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/bhavyasripeela'"/>
+                    </div>
+
+                </div>
+                <section class="about-content">
+                    <p class="section__text__p1">Get to know more</p>
+                    <h1 class="title">About Me</h1>
+                </section>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills',this)">Skills</p>
+                    <p class="tab-links" onclick="opentab('about-projects',this)">Projects</p>
+                    
+                    <p class="tab-links" onclick="opentab('education',this)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        
+                        <li><span>C Programming</span><br></li>
+                        <li><span>Python</span><br></li>
+                        <li><span>C++</span><br></li>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+
+                    </ul>
+                    </div>
+                <div class="tab-contents" id="about-projects">
+                    <ul>
+                        <li><span>Personal Portfolio Website</span><br></li>
+                        
+                                             
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech(Artificial Intelligence)</span><br>Vignan's Institute of Information Technology<br>Vishakapatnam</li>
+                        <li><span>Intermediate(MPC)</span><br>Dr.Himashekhar Junior College<br>Anakapalle</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+        
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <p class="browse-line">Browse My Recent</p>
+            <h1 class="sub-title">Projects</h1>
+
+            <div class="details-container">
+                <h2>Portfolio Website</h2>
+                <ul class="list">
+                   <li> A personal portfolio website developed using HTML and CSS to showcase my learning journey,skills,
+                    projects, and achievements in a clean and structured format.
+                    </li>
+                
+                </ul>
+                <div class="btn-container">
+                    <button class="git-btn"  onclick="location.href='https://github.com/bhavyasripeela'">
+                        GitHub
+                    </button>
+                    <button class="live-btn" onclick="location.href='https://github.com/bhavyasripeela'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </section>
+        
+                        
+                
+                        
+        
+
+    <!-- CONTACT -->
+           <section id="contact">
+   <p class="contact__text__p1">Get in Touch</p>
+   <h1 class="title">Contact Me</h1>
+   <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+        <img src="images\mail.png"
+        alt="Email Icon"
+        class="icon contact-icon"/>
+        <p><a href="mailto:bhavyasripeela@gmail.com">Mail</a></p>
+    </div>
+    <div class="contact-info-container">
+        <img src="images\download.png"
+        alt="Linkedin Icon"
+        class="icon contact-icon"/>
+        <p><a href="//www.linkedin.com/in/bhavya-sri-830348348'">LinkedIn</a></p>
+    </div>
+   </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        <p>© 2025 Bhavya Sri</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        function opentab(tabname, element) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (let link of tablinks) {
+                link.classList.remove("active-link");
+            }
+            for (let content of tabcontents) {
+                content.classList.remove("active-tab");
+            }
+
+            element.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
